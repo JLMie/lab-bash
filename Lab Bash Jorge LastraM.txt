@@ -1,0 +1,112 @@
+1.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ echo "Hello World"
+Hello World
+
+2.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ mkdir new_dir
+
+3.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ -r new_dir
+bash: -r: command not found
+
+4.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ rmdir new_dir
+
+
+5.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy/
+
+
+6.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ cp lorem/at.txt lorem/lorem.txt lorem-copy/;
+
+
+7.
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ cat lorem/sed.txt
+#Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus.
+
+8.
+$ head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+
+9.
+$ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+
+10.
+$ echo "Homo homini lupus." >> lorem-copy/sed.txt
+
+
+11.
+$ tail -3 lorem-copy/sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+12.
+$ sed -i 's/et/ET/g' lorem/at.txt
+
+
+13.
+$ whoami
+IUREK
+
+14.
+$ pwd
+/c/Users/IUREK/Desktop/IH-Labs/lab-bash
+
+
+15.
+$ ls lorem/*.txt
+lorem/at.txt  lorem/lorem.txt  lorem/sed.txt
+
+
+16.
+$ cat lorem/sed.txt | wc -l
+9
+
+
+17.
+$ find / -name "lorem*" | wc -l
+find: ‘/tmp/msdtadmin’: Permission denied
+
+
+From exercise 20 to 23 
+
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ read -p "Enter your name: " name
+Enter your name: George
+
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ echo $name
+George
+
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ mkdir $name
+
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$ rmdir $name
+
+IUREK@LAPTOP-D9S5QJ2K MINGW64 ~/Desktop/IH-Labs/lab-bash (master)
+$
